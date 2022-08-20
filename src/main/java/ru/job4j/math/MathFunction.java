@@ -14,7 +14,7 @@ public class MathFunction {
         return first - second;
     }
 
-    public static double devide(double first, double second) {
+    public static double dev(double first, double second) {
         return  first / second;
     }
 }
