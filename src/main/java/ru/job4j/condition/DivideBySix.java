@@ -22,3 +22,4 @@ public class DivideBySix {
         System.out.println(checkNumber(11));
     }
 }
+
