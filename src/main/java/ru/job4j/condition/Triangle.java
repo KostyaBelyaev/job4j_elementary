@@ -10,3 +10,4 @@ public class Triangle {
         System.out.println(exist(3, 4, 5));
     }
 }
+
