@@ -8,7 +8,7 @@ public class DivideBySixTest {
     public void whenNumberDivideBy6() {
         int in = 24;
         String result = DivideBySix.checkNumber(in);
-        String expected = "Ishodnoe chislo delitsya na 6.";
+        String expected = "Исходное число делится на 6.";
         assertThat(result).isEqualTo(expected);
     }
 
@@ -16,7 +16,7 @@ public class DivideBySixTest {
     public void whenNumberDivideBy3AndNotEven() {
         int in = 9;
         String result = DivideBySix.checkNumber(in);
-        String expected = "Ishodnoe chislo delitsya na 3, no ne yavlyaetsya chetnym.";
+        String expected = "Исходное число делится на 3, но не является четным.";
         assertThat(result).isEqualTo(expected);
     }
 
@@ -24,7 +24,7 @@ public class DivideBySixTest {
     public void whenNumberNoDivideBy3AndEven() {
         int in = 14;
         String result = DivideBySix.checkNumber(in);
-        String expected = "Ishodnoe chislo ne delitsya na 3, no yavlyaetsya chetnym.";
+        String expected = "Исходное число не делится на 3, но является четным.";
         assertThat(result).isEqualTo(expected);
     }
 
@@ -32,7 +32,7 @@ public class DivideBySixTest {
     public void whenNumberNoDivideBy3AndNotEven() {
         int in = 25;
         String result = DivideBySix.checkNumber(in);
-        String expected = "Ishodnoe chislo ne delitsya na 3 i  ne yavlyaetsya chetnym.";
+        String expected = "Исходное число не делится на 3 и не является четным.";
         assertThat(result).isEqualTo(expected);
     }
 }
