@@ -15,3 +15,4 @@ public class Factorial {
         System.out.println(calc(0));
     }
 }
+
