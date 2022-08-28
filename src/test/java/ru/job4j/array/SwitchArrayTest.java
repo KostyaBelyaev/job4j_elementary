@@ -37,3 +37,4 @@ class SwitchArrayTest {
         assertThat(result).containsExactly(expected);
     }
 }
+
