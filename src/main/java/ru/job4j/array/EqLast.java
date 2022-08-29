@@ -15,3 +15,5 @@ public class EqLast {
         System.out.println(chek(left, right));
     }
 }
+
+
