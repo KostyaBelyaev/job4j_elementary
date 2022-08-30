@@ -29,3 +29,4 @@ public class FindLoop {
         System.out.println(indexInRange(data, 88, 0, 5));
     }
 }
+

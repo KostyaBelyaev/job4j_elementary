@@ -44,7 +44,7 @@ public class FindLoopTest {
       int finish = 6;
       int result = FindLoop.indexInRange(data, el, start, finish);
       int expected = 2;
-      assertThat(result).isEqualTo(expected);
+      assertThat(result).isNotEqualTo(expected);
 
     }
 
