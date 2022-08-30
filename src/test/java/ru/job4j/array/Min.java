@@ -16,3 +16,4 @@ public class Min {
         System.out.println(findMin(nums));
     }
 }
+
