@@ -18,3 +18,4 @@ public class EndsWith {
         System.out.println(endsWith(word, post));
     }
 }
+
