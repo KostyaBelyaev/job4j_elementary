@@ -87,6 +87,5 @@ public class MatrixCheckTest {
         char[] expected = {'X', 'Y', 'Z'};
         assertThat(result).containsExactly(expected);
     }
-
 }
 
