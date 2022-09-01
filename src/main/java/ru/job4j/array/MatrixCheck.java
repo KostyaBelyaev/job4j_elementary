@@ -14,15 +14,30 @@ public class MatrixCheck {
         return result;
     }
 
-    public static void main(String[] args) {
-        char[][] boart = {
-                {' ', ' ', ' '},
-                {'X', 'X', 'X'},
-                {'X', ' ', 'X'},
-                {' '},
-                {' ', 'X'},
-                {'X'}
-        };
-        System.out.println(monoHorizontal(boart, 5));
+    public static boolean monoVertical(char[][] boart, int column) {
+        boolean result = true;
+        for (int i = 0; i < boart.length; i++) {
+            for (int cell = column; cell <= column; cell++) {
+                if (boart[i][cell] != 'X') {
+                    result = false;
+                    break;
+                }
+            }
+        }
+        return result;
     }
-}
+
+        public static void main(String[]args) {
+            char[][] boart = {
+                    {'X', ' ', ' '},
+                    {'X', 'X', 'X'},
+                    {'X', ' ', 'X'},
+                    {'X', ' '},
+                    {'X', 'X'},
+                    {'X', 'X'}
+            };
+            System.out.println(monoHorizontal(boart, 5));
+            System.out.println();
+            System.out.println(monoVertical(boart, 1));
+        }
+    }
