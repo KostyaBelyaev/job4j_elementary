@@ -27,7 +27,15 @@ public class MatrixCheck {
         return result;
     }
 
-        public static void main(String[]args) {
+    public static char[] extractDiagonal(char[][] board) {
+        char[] rsl = new char[board.length];
+        for (int index = 0; index < board.length; index++) {
+            rsl[index] = board[index][index];
+        }
+        return rsl;
+    }
+
+    public static void main(String[]args) {
             char[][] boart = {
                     {'X', ' ', ' '},
                     {'X', 'X', 'X'},
@@ -39,5 +47,16 @@ public class MatrixCheck {
             System.out.println(monoHorizontal(boart, 5));
             System.out.println();
             System.out.println(monoVertical(boart, 1));
-        }
+        System.out.println();
+            char[][] array = {
+                    {'X', ' ', ' '},
+                    {' ', 'X', ' '},
+                    {' ', ' ', 'X'}
+            };
+            char[] rsl = extractDiagonal(array);
+            for (int i = 0; i < rsl.length; i++) {
+                System.out.print(rsl[i]);
+            }
     }
+}
+
