@@ -6,15 +6,15 @@ public class Max {
     }
 
     public static int max(int first, int second, int third) {
-        return max(first, second) > third ? max(first, second) : third;
+        return max(max(first, second), third);
     }
 
     public static int max(int first, int second, int third, int fourth) {
-        return max(first, second, third) > fourth ? max(first, second, third) : fourth;
+        return max(max(first, second, third), fourth);
     }
 
     public static void main(String[] args) {
-        int rsl = Max.max(10, 30, 900, 1000);
+        int rsl = Max.max(10, 30, 900, 8999);
         System.out.println(rsl);
     }
 }
